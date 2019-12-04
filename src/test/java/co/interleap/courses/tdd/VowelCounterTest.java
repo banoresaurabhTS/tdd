@@ -23,4 +23,16 @@ public class VowelCounterTest {
     public void allVowels(){
     	assertEquals(5,new VowelCounter().count("aeiou"));
     }
+    
+    @Test
+    public void genericString() {
+        assertEquals(3,new VowelCounter().count("yhdgreei"));
+    }
+    
+    @Test
+    public void noVowel() {
+        assertEquals(0,new VowelCounter().count("yhdgrmmm"));
+    }
+    
+    
 }
